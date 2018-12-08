@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms" 
+             
+             x:Class="ypologismosMorion.SelectedVasiPage"
+             xmlns:Ad="clr-namespace:ypologismosMorion"
+>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <ScrollView Grid.Row="0">
+                <StackLayout  Padding="3" >
+                    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                        <Label Text="Σχολή:" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                        <Label x:Name="sxoli_label" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Πόλη:" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                        <Label x:Name="poli_label" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                        <Label Text="Βάση:" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label x:Name="vasi_label"/>
+                    </StackLayout>
+                    <StackLayout x:Name="triteknoi_layout"  IsVisible="False" HorizontalOptions="Center">
+                        <Label TextColor="Red" FontAttributes="Bold" Text="Μόνο για τρίτεκνους!"/>
+                    </StackLayout>
+                    <StackLayout x:Name="politeknoi_layout"  IsVisible="False" HorizontalOptions="Center">
+                        <Label TextColor="Red" FontAttributes="Bold" Text="Μόνο για πολύτεκνους!"/>
+                    </StackLayout>
+                    <StackLayout x:Name="EidikaMathimata_layout" IsVisible="False" HorizontalOptions="Center">
+                        <Label Text="Έχει ειδικό μάθημα:" TextColor="Red" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label x:Name="eidikoMathima_label" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout x:Name="Stratiotikes_layout" IsVisible="False" HorizontalOptions="Center">
+                        <Label Text="ΠΡΟΣΟΧΗ:" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Για να είσαι υποψήφιος για Στρατιωτικές Σχολές, Αστυνομικές Σχολές, και Σχολές των Ακαδημιών Εμπορικού Ναυτικού πρέπει να έχεις κριθεί ικανός στις οικείες προκαταρκτικές εξετάσεις (υγειονομικές, αθλητικές, ψυχοτεχνικές) που διενεργούνται από τα αρμόδια Υπουργεία κατά περίπτωση."/>
+                    </StackLayout>
+                    <StackLayout x:Name="gelekklisiastikon_layout" IsVisible="False">
+                        <Label Text="Οι συγκεκριμένες θέσεις προορίζονται μόνο για υποψιφίους που προέρχονται από το Γενικό Εκκλησιαστικό Λύκειο" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout x:Name="pedia_layout" HorizontalOptions="Center">
+                        <Label Text="Επιστημονικά Πεδία:" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label x:Name="protopedio_label" Text="1ο πεδίο: Ανθρωπιστικές, Νομικές &amp; Κοινωνικές Επιστήμες" IsVisible="False" />
+                        <Label x:Name="deuteropedio_label" Text="2ο πεδίο: Θετικές &amp; Τεχνολογικές Επιστήμες" IsVisible="False"/>
+                        <Label x:Name="tritopedio_label" Text="3ο πεδίο: Επιστήμες Υγείας &amp; Ζωής" IsVisible="False"/>
+                        <Label x:Name="tetartopedio_label" Text="4ο πεδίο: Επιστήμες Οικονομίας &amp; Πληροφορικής" IsVisible="False"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+            </ScrollView>
+            <!--<Ad:AdBanner Size="LargeBanner" Grid.Row="1"/>-->
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,187 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+using ypologismosMorion.Models;
+
+namespace ypologismosMorion
+{
+    public partial class MainPage : ContentPage
+    {
+        double moria;
+        int kateuthinsi;
+
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            showEidikaMathimata();
+            DisplayAlert(EidikaMathimataDB.DbData.Count().ToString(), "a", "a");
+        }
+
+        void Handle_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+
+            kateuthinsi = epilogi.SelectedIndex;
+            if (epilogi.SelectedIndex != -1)
+            {
+                a_mathima_label.IsVisible = true;
+                b_mathima_label.IsVisible = true;
+                c_mathima_label.IsVisible = true;
+                d_mathima_label.IsVisible = true;
+                a_mathima.IsVisible = true;
+                b_mathima.IsVisible = true;
+                c_mathima.IsVisible = true;
+                d_mathima.IsVisible = true;
+                a_mathima_label.Text = "Έκθεση";
+                e_mathimata_button.IsVisible = true;
+
+                click.IsVisible = true;
+                apotelesma.IsVisible = true;
+            }
+
+
+            if (epilogi.SelectedIndex == 0)
+            {
+                b_mathima_label.Text = "Λατινικά";
+                c_mathima_label.Text = "Ιστορία";
+                d_mathima_label.Text = "Αρχαία";
+
+
+            }
+            else if (epilogi.SelectedIndex == 1)
+            {
+                b_mathima_label.Text = "Χημεία";
+                c_mathima_label.Text = "Φυσική";
+                d_mathima_label.Text = "Μαθηματικά";
+
+
+            }
+            else if (epilogi.SelectedIndex == 2)
+            {
+                b_mathima_label.Text = "Φυσική";
+                c_mathima_label.Text = "Χημεία";
+                d_mathima_label.Text = "Βιολογία";
+
+            }
+            else
+            {
+                b_mathima_label.Text = "ΑΕΠΠ";
+                c_mathima_label.Text = "ΑΟΘ";
+                d_mathima_label.Text = "Μαθηματικά";
+
+            }
+        }
+
+
+
+
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+            double a;
+            double b;
+            double c;
+            double d;
+            double ap4;
+
+
+            a = returnValue(a_mathima.Text);
+            b = returnValue(b_mathima.Text);
+            c = returnValue(c_mathima.Text);
+            d = returnValue(d_mathima.Text);
+
+
+
+
+
+            if ((margins(a) && margins(b) && margins(c) && margins(d)))
+            {
+                apotelesma.TextColor = System.Drawing.Color.Black;
+                ap4 = a * 200 + b * 200 + c * 270 + d * 330;
+                apotelesma.Text = ap4.ToString();
+                PouPernw.IsVisible = true;
+                moriatext.IsVisible = true;
+                moria = ap4;
+            }
+            else
+            {
+                apotelesma.TextColor = System.Drawing.Color.Red;
+                apotelesma.Text = "Σφάλμα";
+                PouPernw.IsVisible = false;
+            }
+
+
+
+        }
+
+        async void Handle_Clicked_1(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new PouPerasaPage(moria, kateuthinsi));
+        }
+
+        private double returnValue(string arr)
+        {
+            double a;
+            double.TryParse(arr, out a);
+            return a == null ? 0 : a;
+
+
+        }
+        private bool margins(double val)
+        {
+            if (val > 20 || val < 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+
+
+        private void eidika_mathimata_button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new EidikaMathimataSelect(epilogi.SelectedIndex));
+        }
+
+
+        public void showEidikaMathimata()
+        {
+            if (EidikaMathimataDB.count == 0)
+            {
+                EidikaMathimata_layout.IsVisible = false;
+            }
+            else
+            {
+                EidikaMathimata_layout.IsVisible = true;
+            }
+            eidikamathimata_display.ItemsSource = EidikaMathimataDB.DbData;
+            //foreach (var e in EidikaMathimataDB.DbData)
+            //{
+            //    if (e.eidikomathima.Contains("Βιολογία Γ.Π."))
+            //    {
+            //        biologia_gp_eidiko.IsVisible = true;
+            //    }
+            //    else if (e.eidikomathima.Contains("Βιολογία Κατ."))
+            //    {
+            //        biologia_kateuthinsis_eidiko.IsVisible = true;
+            //    }
+            //    else if (e.eidikomathima.Contains("Μαθηματικά"))
+            //    {
+            //        mathimatika_eidiko.IsVisible = true;
+            //    }
+
+            //}
+
+        }
+
+    }
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ypologismosMorion.EidikaMathimataSelect"
+             Title="Επιλογή Ειδικών Μαθημάτων">
+    <ContentPage.Content>
+        <StackLayout>
+        <TableView>
+            <TableRoot>
+                    <TableSection Title="Πέμπτο Μάθημα">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="10,0">
+                                <Label x:Name="e_mathima_label" VerticalOptions="Center"/>
+                                <Entry x:Name="e_mathima_entry" Placeholder="0.0" Keyboard="Numeric" HorizontalOptions="FillAndExpand" IsVisible="False"/>
+                                <Switch x:Name="e_mathima_switch" IsToggled="false" Toggled="e_mathima_switch_Toggled" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                     <TableSection Title="Ξένες Γλώσσες" >
+                    
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="10,0" >
+                                <Label Text="Αγγλικά" VerticalOptions="Center" />
+                                <Entry x:Name="agglika" Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder="0.0" IsVisible="False"/>
+                                <Switch x:Name="agglika_switch" IsToggled="False" Toggled="agglika_Toggled" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell >
+                            <StackLayout Orientation="Horizontal" Margin="10,0">
+                                <Label Text="Γαλλικά" VerticalOptions="Center"/>
+                                <Entry x:Name="gallika" Keyboard="Numeric" HorizontalOptions="FillAndExpand" Placeholder="0.0" IsVisible="False"/>
+                                <Switch x:Name="gallika_switch" IsToggled="False" Toggled="gallika_Toggled" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="10,0">
+                                <Label Text="Γερμανικά" VerticalOptions="Center"/>
+                                <Entry x:Name="germanika" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+                                <Switch x:Name="germanika_switch" IsToggled="False" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="10,0">
+                                <Label Text="Ιταλικά" VerticalOptions="Center"/>
+                                <Entry x:Name="italika" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+                                <Switch x:Name="italika_switch" IsToggled="False" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="10,0">
+                                <Label Text="Ισπανικά" VerticalOptions="Center"/>
+                                <Entry x:Name="ispanika" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+                                <Switch x:Name="ispanika_switch" IsToggled="False" />
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection >
+                    <TableSection Title="Αθλήματα">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="10,0">
+                                <Label Text="Αγώνισμα 1" VerticalOptions="Center"/>
+                                <Entry x:Name="agonisma1" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+                                
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="10,0">
+                                <Label Text="Αγώνισμα 2" VerticalOptions="Center"/>
+                                <Entry x:Name="agonisma2" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+                                <Switch x:Name="agonismata_switch" IsToggled="False" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="10,0">
+                                <Label Text="Αγώνισμα 3" VerticalOptions="Center"/>
+                                <Entry x:Name="agonisma3" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+                                
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Σχέδιο">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="10,0">
+                                <Label Text="Ελεύθερο Σχέδιο" VerticalOptions="Center" />
+                                <Entry x:Name="eleuthero_sxedio_entry" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+                                <Switch x:Name="sxedio_switch" IsToggled="False" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="10,0">
+                                <Label Text="Γραμμικό Σχέδιο" VerticalOptions="Center" />
+                                <Entry x:Name="grammiko_sxedio_entry" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+                                
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Μουσική" >
+                        <ViewCell>
+                            <StackLayout x:Name="armonia_layout" Orientation="Horizontal" Margin="10,0" >
+                                <Label Text="Αρμονία" VerticalOptions="Center"/>
+                                <Entry x:Name="armonia_entry" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+                                <Switch x:Name="mousiki_switch" IsToggled="False" />
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout x:Name="mousiki_akoustiki_layout" Orientation="Horizontal" Margin="10,0">
+                                <Label Text="Μουσική Ακουστική Ικανότητα" VerticalOptions="Center"/>
+                                <Entry x:Name="mousiki_akoustiki_entry" Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+                                
+                            </StackLayout>
+                        </ViewCell>
+
+                    </TableSection>
+
+                </TableRoot>
+            
+            
+            <!--<TableView x:Name="KseniGlossa_layout">
+                <</TableView>
+                    <TableView x:Name="Agonismata_layout">
+
+                    </TableView>
+                    <TableView x:Name="Sxedio_layout">
+
+                    </TableView>
+                    <TableView x:Name="Mousiki_layout">
+
+                    </TableView>-->
+            
+        </TableView>
+            <Button Text="Αποθήκευση και Επιστροφή" Clicked="BackButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ypologismosMorion.MainPage"
+             xmlns:Ad="clr-namespace:ypologismosMorion"
+             
+             Title="Υπολογισμός Μορίων">
+    <!-- the scrollview is temporary until I learn how to work with grid.-->
+
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="0">
+            <StackLayout VerticalOptions="StartAndExpand" Padding="7" >
+                <!-- Place new controls here -->
+
+                <Picker VerticalOptions="Center" x:Name="epilogi" Title="Επιλογή Κατεύθυνσης" SelectedIndexChanged="Handle_SelectedIndexChanged">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Θεωρητική</x:String>
+                            <x:String>Θετική</x:String>
+                            <x:String>Επιστήμης Yγείας</x:String>
+                            <x:String>Οικονομικά</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Ad:ypolEntry Text="test entry" Keyboard="Numeric"/>
+                <Label x:Name="a_mathima_label" Text="Έκθεση" IsVisible="false"/>
+                <Entry x:Name="a_mathima" Keyboard="Numeric"  IsVisible="false"/>
+                <Label x:Name="b_mathima_label" Text="ΑΕΠΠ" IsVisible="false"/>
+                <Entry x:Name="b_mathima" Keyboard="Numeric" IsVisible="false" />
+                <Label x:Name="c_mathima_label" Text="ΑΟΘ" IsVisible="false"/>
+                <Entry x:Name="c_mathima" Keyboard="Numeric" IsVisible="false" />
+                <Label x:Name="d_mathima_label" Text="Μαθηματικά" IsVisible="false"/>
+                <Entry x:Name="d_mathima" Keyboard="Numeric" IsVisible="false"/>
+                <Button x:Name="e_mathimata_button" Text="Ειδικά Μαθήματα ->" Clicked="eidika_mathimata_button_Clicked" IsVisible="false" BackgroundColor="#1E90FF" TextColor="White" CornerRadius="10"/>
+                <Frame x:Name="EidikaMathimata_layout" IsVisible="False">
+                    <StackLayout>
+                        <Label Text="Ειδικά Μαθήματα που επιλέχτηκαν:" FontAttributes="Bold"/>
+
+
+                        <StackLayout>
+                            <ListView x:Name="eidikamathimata_display">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <ViewCell>
+                                            <Label Text="{Binding eidikomathima}" VerticalOptions="Center"/>
+                                        </ViewCell>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label x:Name="eidika_temp_name_label" Text="Ειδικά Μαθήματα:" IsVisible="False"/>
+                        <Switch x:Name="Eidika_temp_switch" IsToggled="False" IsVisible="False" HorizontalOptions="EndAndExpand" Toggled="Eidika_temp_switch_Toggled"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label x:Name="eidika_temp_label" Text="Eισάγετε τα μόρια που έχετε από ειδικά μαθήματα:" IsVisible="False" VerticalOptions="Center"/>
+                        <Entry x:Name="Eidika_temp" Keyboard="Numeric" IsVisible="False" HorizontalOptions="FillAndExpand" />
+
+                    </StackLayout>
+                </StackLayout>
+                <Button x:Name="click" Clicked="Result_Clicked" Text="Εισαγωγη" TextColor="White" BackgroundColor="#1E90FF" IsVisible="false" Margin="0,10,0,0" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label x:Name="moriatext" IsVisible="false"/>
+                    <Label x:Name="apotelesma"  HorizontalOptions="Center"  IsVisible="false" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label x:Name="moriaeidikatext" Text="Με ειδικά Μαθήματα :" IsVisible="false"/>
+                    <Label x:Name="apotelesmaeidika"  HorizontalOptions="Center"  IsVisible="false" FontAttributes="Bold"/>
+                </StackLayout>
+                <!--<StackLayout>
+                    <ListView x:Name="apotelesmata_list">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding pediopouanoigei}" HorizontalOptions="Center" />
+                                        <Label Text="{Binding moria}" />
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>-->
+
+
+                <Button x:Name="PouPernw" Text="Που περναω;" TextColor="White" BackgroundColor="#1E90FF" IsVisible="false" Clicked="Handle_Clicked_1"/>
+            </StackLayout>
+        </ScrollView>
+        <Ad:AdBanner Size="SmartBannerPortrait" Grid.Row="1"/>
+        
+    </Grid>
+</ContentPage>
