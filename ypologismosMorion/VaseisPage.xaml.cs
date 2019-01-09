@@ -117,7 +117,9 @@ namespace ypologismosMorion
             {
                 newlist = lista2.Where(x => x.poli == (selectPoli.SelectedIndex > 0 ? selectPoli.SelectedItem.ToString() : x.poli))
                     .Where(x => (x.pedio == (selectPedio.SelectedIndex > 0 ? selectPedio.SelectedIndex : x.pedio) || x.deuteropedio == (selectPedio.SelectedIndex > 0 ? selectPedio.SelectedIndex : x.deuteropedio) || x.tefaa == true || x.tritopedio == (selectPedio.SelectedIndex > 0 ? selectPedio.SelectedIndex : x.tritopedio)) || x.ApoOlaTaPedia == true || x.tefaa == true)
-                    .Where(x => x.triteknoi == (EidikesKatigories.SelectedIndex == 1 ? true : false))
+                    .Where(x => x.stratiotikesAkatigoria == (EidikesKatigories.SelectedItem == "Στρατιωτικές Ειδ. Κατ. 3648/α"))
+                    .Where(x => x.stratiotikesBkatigoria == (EidikesKatigories.SelectedItem == "Στρατιωτικές Ειδ. Κατ. 3648/β"))
+                    .Where(x => x.triteknoi == (EidikesKatigories.SelectedItem == "Τρίτεκνοι"))
                     .Where(x => x.politeknoi == (EidikesKatigories.SelectedItem == "Πολύτεκνοι"))
                     .Where(x => x.monoGiaAstinomikous == (EidikesKatigories.SelectedItem == "Μόνο για Αστυνομικούς"))
                     .Where(x => x.MonoGiaPirosvestes == (EidikesKatigories.SelectedItem == "Μόνο για Πυροσβέστες"))

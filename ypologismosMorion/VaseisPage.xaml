@@ -16,7 +16,7 @@
             </Grid.RowDefinitions>
             <StackLayout Grid.Row="0">
                 <SearchBar Placeholder="Αναζήτηση..." TextChanged="SearchBar_TextChanged" />
-                <ScrollView x:Name="Filters" Orientation="Horizontal">
+                <ScrollView x:Name="Filters" Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                     <StackLayout  Orientation="Horizontal" IsVisible="True">
                         <Picker x:Name="selectPoli" Title="Πόλη..." SelectedIndexChanged="Πόλη_SelectedIndexChanged" HorizontalOptions="Start">
                             <Picker.ItemsSource></Picker.ItemsSource>
@@ -36,6 +36,8 @@
                             <Picker.ItemsSource>
                                 <x:Array Type="{x:Type x:String}">
                                     <x:String>Κανένα</x:String>
+                                    <x:String>Στρατιωτικές Ειδ. Κατ. 3648/α</x:String>
+                                    <x:String>Στρατιωτικές Ειδ. Κατ. 3648/β</x:String>
                                     <x:String>Τρίτεκνοι</x:String>
                                     <x:String>Πολύτεκνοι</x:String>
                                     <x:String>Μόνο για Αστυνομικούς</x:String>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="4" android:versionName="1.3" package="com.chrisvamvalis.ypologismosMorion" android:installLocation="preferExternal">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.4" package="com.chrisvamvalis.ypologismosMorion" android:installLocation="preferExternal" android:versionCode="5">
 	<uses-sdk android:minSdkVersion="19" android:targetSdkVersion="27" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
