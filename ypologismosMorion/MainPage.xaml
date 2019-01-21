@@ -10,7 +10,7 @@
     <Grid RowSpacing="0">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <ScrollView Grid.Row="0">
             <StackLayout VerticalOptions="StartAndExpand" Padding="7" >
@@ -92,7 +92,7 @@
                 <Button x:Name="PouPernw" Text="Που περναω;" TextColor="White" BackgroundColor="#1E90FF" IsVisible="false" Clicked="Handle_Clicked_1"/>
             </StackLayout>
         </ScrollView>
-        <Ad:AdBanner Size="SmartBannerPortrait" Grid.Row="1"/>
+        <Ad:AdBanner Size="Standardbanner" Grid.Row="1"/>
         
     </Grid>
 </ContentPage>

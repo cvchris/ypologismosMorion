@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <!--Is used for Welcome screen-->
-  <style name="Theme.Splash" parent="android:Theme">
-    <item name="android:windowBackground">@drawable/splashScreen</item>
+  <style name="MainTheme.Splash" parent ="MainTheme.Base">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="android:windowNoTitle">true</item>
     <item name="android:windowFullscreen">true</item>
-    <item name="android:windowNoTitle">True</item>
-  </style>  
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowActionBar">true</item>
+  </style>
   
   <style name="MainTheme" parent="MainTheme.Base">
     </style>

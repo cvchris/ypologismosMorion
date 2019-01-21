@@ -51,10 +51,12 @@ namespace ypologismosMorion.Droid
                 // TODO: change this id to your admob id
                  adView.AdUnitId = "ca-app-pub-2860697859082710/3399726488";
 
+                
                 //this one below is the demo one
                 //adView.AdUnitId = "ca-app-pub-3940256099942544/6300978111";
 
                 var requestbuilder = new AdRequest.Builder();
+                requestbuilder.AddTestDevice("91E3A9525B4283FD58E3F0D62DA8CA1F");
                 adView.LoadAd(requestbuilder.Build());
 
                 SetNativeControl(adView);
