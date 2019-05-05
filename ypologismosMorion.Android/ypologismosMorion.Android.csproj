@@ -68,6 +68,9 @@
     <PackageReference Include="Plugin.StoreReview">
       <Version>2.0.0.5</Version>
     </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.5.231</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Build.Download">
       <Version>0.4.6</Version>
     </PackageReference>
@@ -87,6 +90,7 @@
   <ItemGroup>
     <Compile Include="AdBanner_Droid.cs" />
     <Compile Include="AdInterstitial_Droid.cs" />
+    <Compile Include="DatabaseService.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,6 +98,7 @@
     <Compile Include="ypolEntryRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\vaseis.db" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml">

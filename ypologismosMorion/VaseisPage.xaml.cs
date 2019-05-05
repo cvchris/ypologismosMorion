@@ -36,6 +36,8 @@ namespace ypologismosMorion
 
         bool atoz = true;
         List<Vaseis> lista2 = VaseisData;
+        List<VaseisDBnew> data = new DatabaseManager().GetAllVaseis();
+
         public IEnumerable<Vaseis> newlist = new List<Vaseis>();
         public IEnumerable<Vaseis> ListToGetFrom = new List<Vaseis>();
 
@@ -45,11 +47,10 @@ namespace ypologismosMorion
             // List to Get From -> Has everyitem except the "triteknoi, politeknoi, monogiaastinomikous"
             // newlist -> current list, it is the one that is being showed after filters are being applied.
             InitializeComponent();
-
             ListToGetFrom = lista2.Where(x => x.triteknoi == false && x.politeknoi == false && x.monoGiaAstinomikous == false && x.KoinKritiria == false && x.MonoGiaPirosvestes == false && x.GelEklisiastikon == false);
             newlist = ListToGetFrom;
             sxoles_vaseis_listview.ItemsSource = ListToGetFrom;
-
+            //data.Where(x => x.)
             var poleislist = lista2.GroupBy(item => item.poli)
                            .OrderByDescending(a => a.Count())
                            .Select(x => x.Key)

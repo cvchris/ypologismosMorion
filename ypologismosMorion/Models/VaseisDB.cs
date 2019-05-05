@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ypologismosMorion.Models
 {
-    class VaseisDB
+    public class VaseisDBnew
     {
         public string idryma { get; set; }
         public int kodikos { get; set; }
