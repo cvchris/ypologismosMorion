@@ -127,7 +127,7 @@
                     </TableView>-->
             
         </TableView>
-            <Button Text="Αποθήκευση και Επιστροφή" Clicked="BackButton_Clicked"/>
+            <!--<Button Text="Αποθήκευση και Επιστροφή" Clicked="BackButton_Clicked"/>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

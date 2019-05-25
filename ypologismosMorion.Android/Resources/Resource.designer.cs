@@ -40,6 +40,10 @@ namespace ypologismosMorion.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_out = global::ypologismosMorion.Droid.Resource.Animation.design_bottom_sheet_slide_out;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_in = global::ypologismosMorion.Droid.Resource.Animation.design_snackbar_in;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_out = global::ypologismosMorion.Droid.Resource.Animation.design_snackbar_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromLeft = global::ypologismosMorion.Droid.Resource.Animation.EnterFromLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromRight = global::ypologismosMorion.Droid.Resource.Animation.EnterFromRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToLeft = global::ypologismosMorion.Droid.Resource.Animation.ExitToLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToRight = global::ypologismosMorion.Droid.Resource.Animation.ExitToRight;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.tooltip_enter = global::ypologismosMorion.Droid.Resource.Animation.tooltip_enter;
 			global::Xamarin.Forms.Platform.Android.Resource.Animation.tooltip_exit = global::ypologismosMorion.Droid.Resource.Animation.tooltip_exit;
 			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_appbar_state_list_animator = global::ypologismosMorion.Droid.Resource.Animator.design_appbar_state_list_animator;
@@ -809,6 +813,8 @@ namespace ypologismosMorion.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.beginning = global::ypologismosMorion.Droid.Resource.Id.beginning;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.blocking = global::ypologismosMorion.Droid.Resource.Id.blocking;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.bottom = global::ypologismosMorion.Droid.Resource.Id.bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottomtab_navarea = global::ypologismosMorion.Droid.Resource.Id.bottomtab_navarea;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottomtab_tabbar = global::ypologismosMorion.Droid.Resource.Id.bottomtab_tabbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.buttonPanel = global::ypologismosMorion.Droid.Resource.Id.buttonPanel;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.cancel_action = global::ypologismosMorion.Droid.Resource.Id.cancel_action;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.center = global::ypologismosMorion.Droid.Resource.Id.center;
@@ -844,6 +850,8 @@ namespace ypologismosMorion.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_horizontal = global::ypologismosMorion.Droid.Resource.Id.fill_horizontal;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_vertical = global::ypologismosMorion.Droid.Resource.Id.fill_vertical;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.@fixed = global::ypologismosMorion.Droid.Resource.Id.@fixed;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_appbar = global::ypologismosMorion.Droid.Resource.Id.flyoutcontent_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_recycler = global::ypologismosMorion.Droid.Resource.Id.flyoutcontent_recycler;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.forever = global::ypologismosMorion.Droid.Resource.Id.forever;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.ghost_view = global::ypologismosMorion.Droid.Resource.Id.ghost_view;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.home = global::ypologismosMorion.Droid.Resource.Id.home;
@@ -861,6 +869,10 @@ namespace ypologismosMorion.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.line3 = global::ypologismosMorion.Droid.Resource.Id.line3;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.listMode = global::ypologismosMorion.Droid.Resource.Id.listMode;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.list_item = global::ypologismosMorion.Droid.Resource.Id.list_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_appbar = global::ypologismosMorion.Droid.Resource.Id.main_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_scrollview = global::ypologismosMorion.Droid.Resource.Id.main_scrollview;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_tablayout = global::ypologismosMorion.Droid.Resource.Id.main_tablayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_toolbar = global::ypologismosMorion.Droid.Resource.Id.main_toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.masked = global::ypologismosMorion.Droid.Resource.Id.masked;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.media_actions = global::ypologismosMorion.Droid.Resource.Id.media_actions;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.message = global::ypologismosMorion.Droid.Resource.Id.message;
@@ -904,6 +916,9 @@ namespace ypologismosMorion.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Id.search_src_text = global::ypologismosMorion.Droid.Resource.Id.search_src_text;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.search_voice_btn = global::ypologismosMorion.Droid.Resource.Id.search_voice_btn;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.select_dialog_listview = global::ypologismosMorion.Droid.Resource.Id.select_dialog_listview;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_appbar = global::ypologismosMorion.Droid.Resource.Id.shellcontent_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_scrollview = global::ypologismosMorion.Droid.Resource.Id.shellcontent_scrollview;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_toolbar = global::ypologismosMorion.Droid.Resource.Id.shellcontent_toolbar;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.shortcut = global::ypologismosMorion.Droid.Resource.Id.shortcut;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showCustom = global::ypologismosMorion.Droid.Resource.Id.showCustom;
 			global::Xamarin.Forms.Platform.Android.Resource.Id.showHome = global::ypologismosMorion.Droid.Resource.Id.showHome;
@@ -985,6 +1000,7 @@ namespace ypologismosMorion.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::ypologismosMorion.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_search_view = global::ypologismosMorion.Droid.Resource.Layout.abc_search_view;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_select_dialog_material = global::ypologismosMorion.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.BottomTabLayout = global::ypologismosMorion.Droid.Resource.Layout.BottomTabLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_navigation_item = global::ypologismosMorion.Droid.Resource.Layout.design_bottom_navigation_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_sheet_dialog = global::ypologismosMorion.Droid.Resource.Layout.design_bottom_sheet_dialog;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar = global::ypologismosMorion.Droid.Resource.Layout.design_layout_snackbar;
@@ -999,6 +1015,7 @@ namespace ypologismosMorion.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu = global::ypologismosMorion.Droid.Resource.Layout.design_navigation_menu;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu_item = global::ypologismosMorion.Droid.Resource.Layout.design_navigation_menu_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_text_input_password_icon = global::ypologismosMorion.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.FlyoutContent = global::ypologismosMorion.Droid.Resource.Layout.FlyoutContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_action = global::ypologismosMorion.Droid.Resource.Layout.notification_action;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_action_tombstone = global::ypologismosMorion.Droid.Resource.Layout.notification_action_tombstone;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_media_action = global::ypologismosMorion.Droid.Resource.Layout.notification_media_action;
@@ -1014,9 +1031,11 @@ namespace ypologismosMorion.Droid
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_media_custom = global::ypologismosMorion.Droid.Resource.Layout.notification_template_media_custom;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_chronometer = global::ypologismosMorion.Droid.Resource.Layout.notification_template_part_chronometer;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_time = global::ypologismosMorion.Droid.Resource.Layout.notification_template_part_time;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.RootLayout = global::ypologismosMorion.Droid.Resource.Layout.RootLayout;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_item_material = global::ypologismosMorion.Droid.Resource.Layout.select_dialog_item_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_multichoice_material = global::ypologismosMorion.Droid.Resource.Layout.select_dialog_multichoice_material;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_singlechoice_material = global::ypologismosMorion.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.ShellContent = global::ypologismosMorion.Droid.Resource.Layout.ShellContent;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::ypologismosMorion.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
 			global::Xamarin.Forms.Platform.Android.Resource.Layout.tooltip = global::ypologismosMorion.Droid.Resource.Layout.tooltip;
 			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_home_description = global::ypologismosMorion.Droid.Resource.String.abc_action_bar_home_description;
@@ -2047,10 +2066,22 @@ namespace ypologismosMorion.Droid
 			public const int design_snackbar_out = 2131034125;
 			
 			// aapt resource value: 0x7f05000e
-			public const int tooltip_enter = 2131034126;
+			public const int EnterFromLeft = 2131034126;
 			
 			// aapt resource value: 0x7f05000f
-			public const int tooltip_exit = 2131034127;
+			public const int EnterFromRight = 2131034127;
+			
+			// aapt resource value: 0x7f050010
+			public const int ExitToLeft = 2131034128;
+			
+			// aapt resource value: 0x7f050011
+			public const int ExitToRight = 2131034129;
+			
+			// aapt resource value: 0x7f050012
+			public const int tooltip_enter = 2131034130;
+			
+			// aapt resource value: 0x7f050013
+			public const int tooltip_exit = 2131034131;
 			
 			static Animation()
 			{
@@ -5053,8 +5084,8 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c0037
 			public const int SYM = 2131492919;
 			
-			// aapt resource value: 0x7f0c00b6
-			public const int action0 = 2131493046;
+			// aapt resource value: 0x7f0c00ba
+			public const int action0 = 2131493050;
 			
 			// aapt resource value: 0x7f0c007c
 			public const int action_bar = 2131492988;
@@ -5077,17 +5108,17 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c005a
 			public const int action_bar_title = 2131492954;
 			
-			// aapt resource value: 0x7f0c00b3
-			public const int action_container = 2131493043;
+			// aapt resource value: 0x7f0c00b7
+			public const int action_container = 2131493047;
 			
 			// aapt resource value: 0x7f0c007d
 			public const int action_context_bar = 2131492989;
 			
-			// aapt resource value: 0x7f0c00ba
-			public const int action_divider = 2131493050;
+			// aapt resource value: 0x7f0c00be
+			public const int action_divider = 2131493054;
 			
-			// aapt resource value: 0x7f0c00b4
-			public const int action_image = 2131493044;
+			// aapt resource value: 0x7f0c00b8
+			public const int action_image = 2131493048;
 			
 			// aapt resource value: 0x7f0c0003
 			public const int action_menu_divider = 2131492867;
@@ -5104,11 +5135,11 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c005c
 			public const int action_mode_close_button = 2131492956;
 			
-			// aapt resource value: 0x7f0c00b5
-			public const int action_text = 2131493045;
+			// aapt resource value: 0x7f0c00b9
+			public const int action_text = 2131493049;
 			
-			// aapt resource value: 0x7f0c00c3
-			public const int actions = 2131493059;
+			// aapt resource value: 0x7f0c00c7
+			public const int actions = 2131493063;
 			
 			// aapt resource value: 0x7f0c005d
 			public const int activity_chooser_view_content = 2131492957;
@@ -5140,11 +5171,17 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c003d
 			public const int bottom = 2131492925;
 			
+			// aapt resource value: 0x7f0c008b
+			public const int bottomtab_navarea = 2131493003;
+			
+			// aapt resource value: 0x7f0c008c
+			public const int bottomtab_tabbar = 2131493004;
+			
 			// aapt resource value: 0x7f0c0063
 			public const int buttonPanel = 2131492963;
 			
-			// aapt resource value: 0x7f0c00b7
-			public const int cancel_action = 2131493047;
+			// aapt resource value: 0x7f0c00bb
+			public const int cancel_action = 2131493051;
 			
 			// aapt resource value: 0x7f0c0045
 			public const int center = 2131492933;
@@ -5158,8 +5195,8 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c0073
 			public const int checkbox = 2131492979;
 			
-			// aapt resource value: 0x7f0c00bf
-			public const int chronometer = 2131493055;
+			// aapt resource value: 0x7f0c00c3
+			public const int chronometer = 2131493059;
 			
 			// aapt resource value: 0x7f0c004e
 			public const int clip_horizontal = 2131492942;
@@ -5170,14 +5207,14 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c0039
 			public const int collapseActionView = 2131492921;
 			
-			// aapt resource value: 0x7f0c008d
-			public const int container = 2131493005;
+			// aapt resource value: 0x7f0c008f
+			public const int container = 2131493007;
 			
 			// aapt resource value: 0x7f0c0066
 			public const int contentPanel = 2131492966;
 			
-			// aapt resource value: 0x7f0c008e
-			public const int coordinator = 2131493006;
+			// aapt resource value: 0x7f0c0090
+			public const int coordinator = 2131493008;
 			
 			// aapt resource value: 0x7f0c006d
 			public const int custom = 2131492973;
@@ -5191,20 +5228,20 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c0060
 			public const int default_activity_button = 2131492960;
 			
-			// aapt resource value: 0x7f0c0090
-			public const int design_bottom_sheet = 2131493008;
+			// aapt resource value: 0x7f0c0092
+			public const int design_bottom_sheet = 2131493010;
+			
+			// aapt resource value: 0x7f0c0099
+			public const int design_menu_item_action_area = 2131493017;
+			
+			// aapt resource value: 0x7f0c0098
+			public const int design_menu_item_action_area_stub = 2131493016;
 			
 			// aapt resource value: 0x7f0c0097
-			public const int design_menu_item_action_area = 2131493015;
+			public const int design_menu_item_text = 2131493015;
 			
 			// aapt resource value: 0x7f0c0096
-			public const int design_menu_item_action_area_stub = 2131493014;
-			
-			// aapt resource value: 0x7f0c0095
-			public const int design_menu_item_text = 2131493013;
-			
-			// aapt resource value: 0x7f0c0094
-			public const int design_navigation_view = 2131493012;
+			public const int design_navigation_view = 2131493014;
 			
 			// aapt resource value: 0x7f0c0020
 			public const int disableHome = 2131492896;
@@ -5215,8 +5252,8 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c0030
 			public const int end = 2131492912;
 			
-			// aapt resource value: 0x7f0c00c5
-			public const int end_padder = 2131493061;
+			// aapt resource value: 0x7f0c00c9
+			public const int end_padder = 2131493065;
 			
 			// aapt resource value: 0x7f0c003f
 			public const int enterAlways = 2131492927;
@@ -5245,6 +5282,12 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c0054
 			public const int @fixed = 2131492948;
 			
+			// aapt resource value: 0x7f0c009b
+			public const int flyoutcontent_appbar = 2131493019;
+			
+			// aapt resource value: 0x7f0c009c
+			public const int flyoutcontent_recycler = 2131493020;
+			
 			// aapt resource value: 0x7f0c0058
 			public const int forever = 2131492952;
 			
@@ -5260,8 +5303,8 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c0062
 			public const int icon = 2131492962;
 			
-			// aapt resource value: 0x7f0c00c4
-			public const int icon_group = 2131493060;
+			// aapt resource value: 0x7f0c00c8
+			public const int icon_group = 2131493064;
 			
 			// aapt resource value: 0x7f0c003a
 			public const int ifRoom = 2131492922;
@@ -5269,8 +5312,8 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c005f
 			public const int image = 2131492959;
 			
-			// aapt resource value: 0x7f0c00c0
-			public const int info = 2131493056;
+			// aapt resource value: 0x7f0c00c4
+			public const int info = 2131493060;
 			
 			// aapt resource value: 0x7f0c0059
 			public const int italic = 2131492953;
@@ -5278,8 +5321,8 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c0000
 			public const int item_touch_helper_previous_elevation = 2131492864;
 			
-			// aapt resource value: 0x7f0c008c
-			public const int largeLabel = 2131493004;
+			// aapt resource value: 0x7f0c008e
+			public const int largeLabel = 2131493006;
 			
 			// aapt resource value: 0x7f0c0049
 			public const int left = 2131492937;
@@ -5297,13 +5340,25 @@ namespace ypologismosMorion.Droid
 			public const int list_item = 2131492961;
 			
 			// aapt resource value: 0x7f0c00ca
-			public const int masked = 2131493066;
+			public const int main_appbar = 2131493066;
 			
-			// aapt resource value: 0x7f0c00b9
-			public const int media_actions = 2131493049;
+			// aapt resource value: 0x7f0c00cd
+			public const int main_scrollview = 2131493069;
 			
-			// aapt resource value: 0x7f0c00c8
-			public const int message = 2131493064;
+			// aapt resource value: 0x7f0c00cc
+			public const int main_tablayout = 2131493068;
+			
+			// aapt resource value: 0x7f0c00cb
+			public const int main_toolbar = 2131493067;
+			
+			// aapt resource value: 0x7f0c00d5
+			public const int masked = 2131493077;
+			
+			// aapt resource value: 0x7f0c00bd
+			public const int media_actions = 2131493053;
+			
+			// aapt resource value: 0x7f0c00d3
+			public const int message = 2131493075;
 			
 			// aapt resource value: 0x7f0c0031
 			public const int middle = 2131492913;
@@ -5311,86 +5366,86 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c0053
 			public const int mini = 2131492947;
 			
-			// aapt resource value: 0x7f0c00a5
-			public const int mr_art = 2131493029;
-			
-			// aapt resource value: 0x7f0c009a
-			public const int mr_chooser_list = 2131493018;
-			
-			// aapt resource value: 0x7f0c009d
-			public const int mr_chooser_route_desc = 2131493021;
-			
-			// aapt resource value: 0x7f0c009b
-			public const int mr_chooser_route_icon = 2131493019;
-			
-			// aapt resource value: 0x7f0c009c
-			public const int mr_chooser_route_name = 2131493020;
-			
-			// aapt resource value: 0x7f0c0099
-			public const int mr_chooser_title = 2131493017;
-			
-			// aapt resource value: 0x7f0c00a2
-			public const int mr_close = 2131493026;
-			
-			// aapt resource value: 0x7f0c00a8
-			public const int mr_control_divider = 2131493032;
-			
-			// aapt resource value: 0x7f0c00ae
-			public const int mr_control_playback_ctrl = 2131493038;
-			
-			// aapt resource value: 0x7f0c00b1
-			public const int mr_control_subtitle = 2131493041;
-			
-			// aapt resource value: 0x7f0c00b0
-			public const int mr_control_title = 2131493040;
-			
-			// aapt resource value: 0x7f0c00af
-			public const int mr_control_title_container = 2131493039;
-			
-			// aapt resource value: 0x7f0c00a3
-			public const int mr_custom_control = 2131493027;
-			
-			// aapt resource value: 0x7f0c00a4
-			public const int mr_default_control = 2131493028;
-			
-			// aapt resource value: 0x7f0c009f
-			public const int mr_dialog_area = 2131493023;
+			// aapt resource value: 0x7f0c00a9
+			public const int mr_art = 2131493033;
 			
 			// aapt resource value: 0x7f0c009e
-			public const int mr_expandable_area = 2131493022;
-			
-			// aapt resource value: 0x7f0c00b2
-			public const int mr_group_expand_collapse = 2131493042;
-			
-			// aapt resource value: 0x7f0c00a6
-			public const int mr_media_main_control = 2131493030;
+			public const int mr_chooser_list = 2131493022;
 			
 			// aapt resource value: 0x7f0c00a1
-			public const int mr_name = 2131493025;
+			public const int mr_chooser_route_desc = 2131493025;
 			
-			// aapt resource value: 0x7f0c00a7
-			public const int mr_playback_control = 2131493031;
+			// aapt resource value: 0x7f0c009f
+			public const int mr_chooser_route_icon = 2131493023;
 			
 			// aapt resource value: 0x7f0c00a0
-			public const int mr_title_bar = 2131493024;
+			public const int mr_chooser_route_name = 2131493024;
 			
-			// aapt resource value: 0x7f0c00a9
-			public const int mr_volume_control = 2131493033;
+			// aapt resource value: 0x7f0c009d
+			public const int mr_chooser_title = 2131493021;
 			
-			// aapt resource value: 0x7f0c00aa
-			public const int mr_volume_group_list = 2131493034;
+			// aapt resource value: 0x7f0c00a6
+			public const int mr_close = 2131493030;
 			
 			// aapt resource value: 0x7f0c00ac
-			public const int mr_volume_item_icon = 2131493036;
+			public const int mr_control_divider = 2131493036;
+			
+			// aapt resource value: 0x7f0c00b2
+			public const int mr_control_playback_ctrl = 2131493042;
+			
+			// aapt resource value: 0x7f0c00b5
+			public const int mr_control_subtitle = 2131493045;
+			
+			// aapt resource value: 0x7f0c00b4
+			public const int mr_control_title = 2131493044;
+			
+			// aapt resource value: 0x7f0c00b3
+			public const int mr_control_title_container = 2131493043;
+			
+			// aapt resource value: 0x7f0c00a7
+			public const int mr_custom_control = 2131493031;
+			
+			// aapt resource value: 0x7f0c00a8
+			public const int mr_default_control = 2131493032;
+			
+			// aapt resource value: 0x7f0c00a3
+			public const int mr_dialog_area = 2131493027;
+			
+			// aapt resource value: 0x7f0c00a2
+			public const int mr_expandable_area = 2131493026;
+			
+			// aapt resource value: 0x7f0c00b6
+			public const int mr_group_expand_collapse = 2131493046;
+			
+			// aapt resource value: 0x7f0c00aa
+			public const int mr_media_main_control = 2131493034;
+			
+			// aapt resource value: 0x7f0c00a5
+			public const int mr_name = 2131493029;
+			
+			// aapt resource value: 0x7f0c00ab
+			public const int mr_playback_control = 2131493035;
+			
+			// aapt resource value: 0x7f0c00a4
+			public const int mr_title_bar = 2131493028;
 			
 			// aapt resource value: 0x7f0c00ad
-			public const int mr_volume_slider = 2131493037;
+			public const int mr_volume_control = 2131493037;
+			
+			// aapt resource value: 0x7f0c00ae
+			public const int mr_volume_group_list = 2131493038;
+			
+			// aapt resource value: 0x7f0c00b0
+			public const int mr_volume_item_icon = 2131493040;
+			
+			// aapt resource value: 0x7f0c00b1
+			public const int mr_volume_slider = 2131493041;
 			
 			// aapt resource value: 0x7f0c0028
 			public const int multiply = 2131492904;
 			
-			// aapt resource value: 0x7f0c0093
-			public const int navigation_header_container = 2131493011;
+			// aapt resource value: 0x7f0c0095
+			public const int navigation_header_container = 2131493013;
 			
 			// aapt resource value: 0x7f0c003b
 			public const int never = 2131492923;
@@ -5401,14 +5456,14 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c001e
 			public const int normal = 2131492894;
 			
-			// aapt resource value: 0x7f0c00c2
-			public const int notification_background = 2131493058;
+			// aapt resource value: 0x7f0c00c6
+			public const int notification_background = 2131493062;
 			
-			// aapt resource value: 0x7f0c00bc
-			public const int notification_main_column = 2131493052;
+			// aapt resource value: 0x7f0c00c0
+			public const int notification_main_column = 2131493056;
 			
-			// aapt resource value: 0x7f0c00bb
-			public const int notification_main_column_container = 2131493051;
+			// aapt resource value: 0x7f0c00bf
+			public const int notification_main_column_container = 2131493055;
 			
 			// aapt resource value: 0x7f0c004c
 			public const int parallax = 2131492940;
@@ -5434,11 +5489,11 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c004a
 			public const int right = 2131492938;
 			
-			// aapt resource value: 0x7f0c00c1
-			public const int right_icon = 2131493057;
+			// aapt resource value: 0x7f0c00c5
+			public const int right_icon = 2131493061;
 			
-			// aapt resource value: 0x7f0c00bd
-			public const int right_side = 2131493053;
+			// aapt resource value: 0x7f0c00c1
+			public const int right_side = 2131493057;
 			
 			// aapt resource value: 0x7f0c000c
 			public const int save_image_matrix = 2131492876;
@@ -5500,6 +5555,15 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c008a
 			public const int select_dialog_listview = 2131493002;
 			
+			// aapt resource value: 0x7f0c00ce
+			public const int shellcontent_appbar = 2131493070;
+			
+			// aapt resource value: 0x7f0c00d0
+			public const int shellcontent_scrollview = 2131493072;
+			
+			// aapt resource value: 0x7f0c00cf
+			public const int shellcontent_toolbar = 2131493071;
+			
 			// aapt resource value: 0x7f0c0074
 			public const int shortcut = 2131492980;
 			
@@ -5512,17 +5576,17 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c0025
 			public const int showTitle = 2131492901;
 			
-			// aapt resource value: 0x7f0c00c6
-			public const int sliding_tabs = 2131493062;
+			// aapt resource value: 0x7f0c00d1
+			public const int sliding_tabs = 2131493073;
 			
-			// aapt resource value: 0x7f0c008b
-			public const int smallLabel = 2131493003;
+			// aapt resource value: 0x7f0c008d
+			public const int smallLabel = 2131493005;
 			
-			// aapt resource value: 0x7f0c0092
-			public const int snackbar_action = 2131493010;
+			// aapt resource value: 0x7f0c0094
+			public const int snackbar_action = 2131493012;
 			
-			// aapt resource value: 0x7f0c0091
-			public const int snackbar_text = 2131493009;
+			// aapt resource value: 0x7f0c0093
+			public const int snackbar_text = 2131493011;
 			
 			// aapt resource value: 0x7f0c0043
 			public const int snap = 2131492931;
@@ -5545,8 +5609,8 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c004b
 			public const int start = 2131492939;
 			
-			// aapt resource value: 0x7f0c00b8
-			public const int status_bar_latest_event_content = 2131493048;
+			// aapt resource value: 0x7f0c00bc
+			public const int status_bar_latest_event_content = 2131493052;
 			
 			// aapt resource value: 0x7f0c0076
 			public const int submenuarrow = 2131492982;
@@ -5572,8 +5636,8 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c0069
 			public const int textSpacerNoTitle = 2131492969;
 			
-			// aapt resource value: 0x7f0c0098
-			public const int text_input_password_toggle = 2131493016;
+			// aapt resource value: 0x7f0c009a
+			public const int text_input_password_toggle = 2131493018;
 			
 			// aapt resource value: 0x7f0c0014
 			public const int textinput_counter = 2131492884;
@@ -5581,8 +5645,8 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c0015
 			public const int textinput_error = 2131492885;
 			
-			// aapt resource value: 0x7f0c00be
-			public const int time = 2131493054;
+			// aapt resource value: 0x7f0c00c2
+			public const int time = 2131493058;
 			
 			// aapt resource value: 0x7f0c001c
 			public const int title = 2131492892;
@@ -5593,8 +5657,8 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c006f
 			public const int title_template = 2131492975;
 			
-			// aapt resource value: 0x7f0c00c7
-			public const int toolbar = 2131493063;
+			// aapt resource value: 0x7f0c00d2
+			public const int toolbar = 2131493074;
 			
 			// aapt resource value: 0x7f0c003e
 			public const int top = 2131492926;
@@ -5602,8 +5666,8 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c006e
 			public const int topPanel = 2131492974;
 			
-			// aapt resource value: 0x7f0c008f
-			public const int touch_outside = 2131493007;
+			// aapt resource value: 0x7f0c0091
+			public const int touch_outside = 2131493009;
 			
 			// aapt resource value: 0x7f0c000f
 			public const int transition_current_scene = 2131492879;
@@ -5632,11 +5696,11 @@ namespace ypologismosMorion.Droid
 			// aapt resource value: 0x7f0c0016
 			public const int view_offset_helper = 2131492886;
 			
-			// aapt resource value: 0x7f0c00c9
-			public const int visible = 2131493065;
+			// aapt resource value: 0x7f0c00d4
+			public const int visible = 2131493076;
 			
-			// aapt resource value: 0x7f0c00ab
-			public const int volume_item_container = 2131493035;
+			// aapt resource value: 0x7f0c00af
+			public const int volume_item_container = 2131493039;
 			
 			// aapt resource value: 0x7f0c003c
 			public const int withText = 2131492924;
@@ -5810,130 +5874,142 @@ namespace ypologismosMorion.Droid
 			public const int abc_select_dialog_material = 2130968601;
 			
 			// aapt resource value: 0x7f04001a
-			public const int design_bottom_navigation_item = 2130968602;
+			public const int BottomTabLayout = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int design_bottom_sheet_dialog = 2130968603;
+			public const int design_bottom_navigation_item = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int design_layout_snackbar = 2130968604;
+			public const int design_bottom_sheet_dialog = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int design_layout_snackbar_include = 2130968605;
+			public const int design_layout_snackbar = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int design_layout_tab_icon = 2130968606;
+			public const int design_layout_snackbar_include = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int design_layout_tab_text = 2130968607;
+			public const int design_layout_tab_icon = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int design_menu_item_action_area = 2130968608;
+			public const int design_layout_tab_text = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int design_navigation_item = 2130968609;
+			public const int design_menu_item_action_area = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int design_navigation_item_header = 2130968610;
+			public const int design_navigation_item = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int design_navigation_item_separator = 2130968611;
+			public const int design_navigation_item_header = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int design_navigation_item_subheader = 2130968612;
+			public const int design_navigation_item_separator = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int design_navigation_menu = 2130968613;
+			public const int design_navigation_item_subheader = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int design_navigation_menu_item = 2130968614;
+			public const int design_navigation_menu = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int design_text_input_password_icon = 2130968615;
+			public const int design_navigation_menu_item = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int mr_chooser_dialog = 2130968616;
+			public const int design_text_input_password_icon = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int mr_chooser_list_item = 2130968617;
+			public const int FlyoutContent = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int mr_controller_material_dialog_b = 2130968618;
+			public const int mr_chooser_dialog = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int mr_controller_volume_item = 2130968619;
+			public const int mr_chooser_list_item = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int mr_playback_control = 2130968620;
+			public const int mr_controller_material_dialog_b = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int mr_volume_control = 2130968621;
+			public const int mr_controller_volume_item = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int notification_action = 2130968622;
+			public const int mr_playback_control = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int notification_action_tombstone = 2130968623;
+			public const int mr_volume_control = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int notification_media_action = 2130968624;
+			public const int notification_action = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int notification_media_cancel_action = 2130968625;
+			public const int notification_action_tombstone = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_template_big_media = 2130968626;
+			public const int notification_media_action = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_template_big_media_custom = 2130968627;
+			public const int notification_media_cancel_action = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_template_big_media_narrow = 2130968628;
+			public const int notification_template_big_media = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_template_big_media_narrow_custom = 2130968629;
+			public const int notification_template_big_media_custom = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int notification_template_custom_big = 2130968630;
+			public const int notification_template_big_media_narrow = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int notification_template_icon_group = 2130968631;
+			public const int notification_template_big_media_narrow_custom = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int notification_template_lines_media = 2130968632;
+			public const int notification_template_custom_big = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int notification_template_media = 2130968633;
+			public const int notification_template_icon_group = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int notification_template_media_custom = 2130968634;
+			public const int notification_template_lines_media = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int notification_template_part_chronometer = 2130968635;
+			public const int notification_template_media = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int notification_template_part_time = 2130968636;
+			public const int notification_template_media_custom = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int select_dialog_item_material = 2130968637;
+			public const int notification_template_part_chronometer = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int select_dialog_multichoice_material = 2130968638;
+			public const int notification_template_part_time = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int select_dialog_singlechoice_material = 2130968639;
+			public const int RootLayout = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int support_simple_spinner_dropdown_item = 2130968640;
+			public const int select_dialog_item_material = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int Tabbar = 2130968641;
+			public const int select_dialog_multichoice_material = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int Toolbar = 2130968642;
+			public const int select_dialog_singlechoice_material = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int tooltip = 2130968643;
+			public const int ShellContent = 2130968643;
+			
+			// aapt resource value: 0x7f040044
+			public const int support_simple_spinner_dropdown_item = 2130968644;
+			
+			// aapt resource value: 0x7f040045
+			public const int Tabbar = 2130968645;
+			
+			// aapt resource value: 0x7f040046
+			public const int Toolbar = 2130968646;
+			
+			// aapt resource value: 0x7f040047
+			public const int tooltip = 2130968647;
 			
 			static Layout()
 			{
