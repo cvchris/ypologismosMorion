@@ -16,11 +16,11 @@ namespace ypologismosMorion
 
             //For Testing
             //Tamoriamou.Text = moria.ToString() + "..." + kateuthinsi.ToString();
-            
+
 
 
             sxolespoupernas.ItemsSource = VaseisData.Where(x => ((x.vasi <= moria && x.ExeiEidikoMathima == false) || (x.vasi <= moriaeidikou && x.ExeiEidikoMathima == true))
-            && ((x.pedio == (kateuthinsi + 1) ||x.deuteropedio == (kateuthinsi + 1) || x.tritopedio == (kateuthinsi + 1) ||x.ApoOlaTaPedia==true) || (x.tefaa == true && exeieidiko == true))
+            && ((x.pedio == (kateuthinsi + 1) || x.deuteropedio == (kateuthinsi + 1) || x.tritopedio == (kateuthinsi + 1) || x.ApoOlaTaPedia == true) || (x.tefaa == true && exeieidiko == true)) && x.stratiotikesAkatigoria == false && x.stratiotikesBkatigoria == false
             );
             
 

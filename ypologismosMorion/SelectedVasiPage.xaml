@@ -33,6 +33,12 @@
                     <StackLayout x:Name="politeknoi_layout"  IsVisible="False" HorizontalOptions="Center">
                         <Label TextColor="Red" FontAttributes="Bold" Text="Μόνο για πολύτεκνους!"/>
                     </StackLayout>
+                    <StackLayout x:Name="stratiotikesA_layout"  IsVisible="False" HorizontalOptions="Center">
+                        <Label TextColor="Red" FontAttributes="Bold" Text="ΓΕΛ ΣΤΡΑΤΙΩΤΙΚΕΣ ΕΙΔ.ΚΑΤ.3648/α!"/>
+                    </StackLayout>
+                    <StackLayout x:Name="stratiotikesB_layout"  IsVisible="False" HorizontalOptions="Center">
+                        <Label TextColor="Red" FontAttributes="Bold" Text="ΓΕΛ ΣΤΡΑΤΙΩΤΙΚΕΣ ΕΙΔ.ΚΑΤ.3648/β!"/>
+                    </StackLayout>
                     <StackLayout x:Name="EidikaMathimata_layout" IsVisible="False" HorizontalOptions="Center">
                         <Label Text="Έχει ειδικό μάθημα:" TextColor="Red" FontAttributes="Bold" HorizontalOptions="Center"/>
                         <Label x:Name="eidikoMathima_label" HorizontalOptions="Center"/>
