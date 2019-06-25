@@ -52,6 +52,10 @@ namespace ypologismosMorion
             }
             if (currentsxoli.GelEklisiastikon)
                 gelekklisiastikon_layout.IsVisible = true;
+            if (currentsxoli.stratiotikesAkatigoria)
+                stratiotikesA_layout.IsVisible = true;
+            if (currentsxoli.stratiotikesBkatigoria)
+                stratiotikesB_layout.IsVisible = true;
 
         }
         protected override void OnAppearing()

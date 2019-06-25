@@ -47,7 +47,8 @@ namespace ypologismosMorion
             // List to Get From -> Has everyitem except the "triteknoi, politeknoi, monogiaastinomikous"
             // newlist -> current list, it is the one that is being showed after filters are being applied.
             InitializeComponent();
-            ListToGetFrom = lista2.Where(x => x.triteknoi == false && x.politeknoi == false && x.monoGiaAstinomikous == false && x.KoinKritiria == false && x.MonoGiaPirosvestes == false && x.GelEklisiastikon == false);
+
+            ListToGetFrom = lista2.Where(x => x.triteknoi == false && x.politeknoi == false && x.monoGiaAstinomikous == false && x.KoinKritiria == false && x.MonoGiaPirosvestes == false && x.GelEklisiastikon == false && x.stratiotikesAkatigoria == false && x.stratiotikesBkatigoria == false);
             newlist = ListToGetFrom;
             sxoles_vaseis_listview.ItemsSource = ListToGetFrom;
             //data.Where(x => x.)
