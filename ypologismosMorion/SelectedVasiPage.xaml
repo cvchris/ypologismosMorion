@@ -16,10 +16,12 @@
             <ScrollView Grid.Row="0">
                 <StackLayout  Padding="3" >
                     <StackLayout>
-                        <Label Text="Α/Α" />
-                        <Label x:Name="idsxolis"/>
-                        <Label Text="Κωδικός Μηχανογραφικού"/>
-                        <Label x:Name="kodikosMixanografikou"/>
+                        <Label Text="Α/Α" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                        <Label x:Name="idsxolis" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Κωδικός Μηχανογραφικού" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                        <Label x:Name="kodikosMixanografikou" HorizontalOptions="Center"/>
                     </StackLayout>
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center">
                         <Label Text="Σχολή:" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
@@ -46,7 +48,7 @@
                         <Label TextColor="Red" FontAttributes="Bold" Text="ΓΕΛ ΣΤΡΑΤΙΩΤΙΚΕΣ ΕΙΔ.ΚΑΤ.3648/β!"/>
                     </StackLayout>
                     <StackLayout x:Name="EidikaMathimata_layout" IsVisible="False" HorizontalOptions="Center">
-                        <Label Text="Έχει ειδικό μάθημα:" TextColor="Red" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Προσοχή:" TextColor="Red" FontAttributes="Bold" HorizontalOptions="Center"/>
                         <Label x:Name="eidikoMathima_label" HorizontalOptions="Center"/>
                     </StackLayout>
                     <StackLayout x:Name="Stratiotikes_layout" IsVisible="False" HorizontalOptions="Center">

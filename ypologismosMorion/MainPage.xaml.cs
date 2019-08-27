@@ -126,6 +126,10 @@ namespace ypologismosMorion
                     }
                     
                 }
+                else
+                {
+                    exeieidiko = false;
+                }
 
             }
             else

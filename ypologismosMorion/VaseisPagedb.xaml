@@ -18,10 +18,10 @@
                 <SearchBar Placeholder="Αναζήτηση..." TextChanged="SearchBar_TextChanged" />
                 <ScrollView x:Name="Filters" Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                     <StackLayout  Orientation="Horizontal" IsVisible="True">
-                        <Picker x:Name="selectPoli" Title="Πόλη...      " SelectedIndexChanged="Πόλη_SelectedIndexChanged" HorizontalOptions="Start">
+                        <Picker x:Name="selectPoli" Title="Πόλη...          " SelectedIndexChanged="Πόλη_SelectedIndexChanged" HorizontalOptions="Start">
                             <Picker.ItemsSource></Picker.ItemsSource>
                         </Picker>
-                        <Picker x:Name="selectPedio" Title="Πεδίο...     " PropertyChanged="selectPedio_SelectedIndexChanged" >
+                        <Picker x:Name="selectPedio" Title="Πεδίο...           " PropertyChanged="selectPedio_SelectedIndexChanged" >
                             <Picker.ItemsSource>
                                 <x:Array Type="{x:Type x:String}">
                                     <x:String>Κανένα</x:String>

@@ -47,11 +47,14 @@ namespace ypologismosMorion
             List<int> exists = new List<int>();
             for(int i=1;i<5;i++)
             {
-                
-                var e = dbConnection.Query<bool>("SELECT CASE WHEN EXISTS (SELECT * FROM[1oPedio2019] WHERE Mixanografiko =" + kodikosMixanografikou.ToString() +") THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT) END");
-                
+                var query = "SELECT * FROM [" + i.ToString() + "oPedio2019] WHERE Mixanografiko =" + kodikosMixanografikou.ToString();
+                var e = dbConnection.Query<VaseisDBnew>(query);
+                if (e.Count > 0)
+                {
+                    exists.Add(i);
+                }
             }
-            return null;
+            return exists;
         }
 
 

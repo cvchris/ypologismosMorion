@@ -33,7 +33,25 @@ namespace ypologismosMorion
             //    Stratiotikes_layout.IsVisible = true;
             //}
 
-            new DatabaseManager().SePoiaPediaAnikei(currentsxoli.Mixanografiko);
+            var pediaPouAnikei = new DatabaseManager().SePoiaPediaAnikei(currentsxoli.Mixanografiko);
+            if(pediaPouAnikei.Contains(1))
+            {
+                protopedio_label.IsVisible = true;
+            }
+            if (pediaPouAnikei.Contains(2))
+            {
+                deuteropedio_label.IsVisible = true;
+            }
+            if (pediaPouAnikei.Contains(3))
+            {
+                tritopedio_label.IsVisible = true;
+            }
+            if (pediaPouAnikei.Contains(4))
+            {
+                tetartopedio_label.IsVisible = true;
+            }
+
+
 
             //if (currentsxoli.pedio == 1 || currentsxoli.deuteropedio==1 || currentsxoli.tritopedio==1 || currentsxoli.ApoOlaTaPedia || currentsxoli.tefaa ) {
             //    protopedio_label.IsVisible = true;

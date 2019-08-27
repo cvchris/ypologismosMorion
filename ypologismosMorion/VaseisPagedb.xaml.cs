@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using ypologismosMorion.Models;
 using System.Linq;
-using static ypologismosMorion.VaseisDB;
 
 namespace ypologismosMorion
 {
@@ -14,13 +13,13 @@ namespace ypologismosMorion
         bool atoz = true;
        // List<Vaseis> lista2 = VaseisData;
         List<VaseisDBnew> data = new DatabaseManager().GetAllVaseis2019();
-
+        List<VaseisDBnew> selectedVaseis { get; set; }
 
         public VaseisPagedb()
         {
             InitializeComponent();
-
-            sxoles_vaseis_listview.ItemsSource = data;
+            selectedVaseis = data;
+            sxoles_vaseis_listview.ItemsSource = selectedVaseis;
 
             var poleislist = data.GroupBy(item => item.poli)
                            .OrderByDescending(a => a.Count())
@@ -73,13 +72,27 @@ namespace ypologismosMorion
         {
             if(selectPedio.SelectedIndex > 0)
             {
-                var selectedVaseis = new DatabaseManager().GetVaseis(selectPedio.SelectedIndex);
+                selectedVaseis = new DatabaseManager().GetVaseis(selectPedio.SelectedIndex);
                 sxoles_vaseis_listview.ItemsSource = selectedVaseis;
             }
             else
             {
-                sxoles_vaseis_listview.ItemsSource = data;
+                selectedVaseis = data;
             }
+
+            if(selectPoli.SelectedIndex > 0)
+            {
+                selectedVaseis = selectedVaseis.Where(x => x.poli == selectPoli.SelectedItem.ToString()).ToList();
+            }
+
+            if(!string.IsNullOrEmpty(searchbare))
+            {
+                selectedVaseis = selectedVaseis.Where(x => x.sxoli.ToUpper().Contains(searchbare.ToUpper())).ToList();
+            }
+
+
+            sxoles_vaseis_listview.ItemsSource = selectedVaseis;
+
             //if (EidikesKatigories.SelectedIndex > 0)
             //{
             //    newlist = lista2.Where(x => x.poli == (selectPoli.SelectedIndex > 0 ? selectPoli.SelectedItem.ToString() : x.poli))
