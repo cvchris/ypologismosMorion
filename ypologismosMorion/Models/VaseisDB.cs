@@ -6,13 +6,13 @@ namespace ypologismosMorion.Models
 {
     public class VaseisDBnew
     {
+        public int ID { get; set; }
+        public int Mixanografiko { get; set; }
         public string idryma { get; set; }
-        public int kodikos { get; set; }
-        public string onoma { get; set; }
-        public string eidosthesis { get; set; }
-        public int moria18 { get; set; }
-        public int moria17 { get; set; }
-        public int diafora { get; set; }
-        public double diaforatisekato { get; set; }
+        public string sxoli { get; set; }
+        public string eidika { get; set; }
+        public string typos { get; set; }
+        public string poli { get; set; }
+        public int vasi { get; set; }
     }
 }

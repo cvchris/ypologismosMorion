@@ -15,6 +15,12 @@
             </Grid.RowDefinitions>
             <ScrollView Grid.Row="0">
                 <StackLayout  Padding="3" >
+                    <StackLayout>
+                        <Label Text="Α/Α" />
+                        <Label x:Name="idsxolis"/>
+                        <Label Text="Κωδικός Μηχανογραφικού"/>
+                        <Label x:Name="kodikosMixanografikou"/>
+                    </StackLayout>
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center">
                         <Label Text="Σχολή:" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
                         <Label x:Name="sxoli_label" HorizontalOptions="Center"/>

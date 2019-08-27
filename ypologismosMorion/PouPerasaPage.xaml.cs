@@ -37,10 +37,10 @@ namespace ypologismosMorion
 
         private void sxolespoupernas_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            
-            var imported = e.Item as Vaseis;
-            //DisplayAlert(imported.sxoli, imported.vasi + currhaseidikomathima, "OK");
-            Navigation.PushAsync(new SelectedVasiPage(imported));
+            throw new NotImplementedException();
+            //var imported = e.Item as Vaseis;
+            ////DisplayAlert(imported.sxoli, imported.vasi + currhaseidikomathima, "OK");
+            //Navigation.PushAsync(new SelectedVasiPage(imported));
         }
     }
 }

@@ -36,7 +36,7 @@ namespace ypologismosMorion
 
         bool atoz = true;
         List<Vaseis> lista2 = VaseisData;
-        List<VaseisDBnew> data = new DatabaseManager().GetAllVaseis();
+        List<VaseisDBnew> data = new DatabaseManager().GetAllVaseis2019();
 
         public IEnumerable<Vaseis> newlist = new List<Vaseis>();
         public IEnumerable<Vaseis> ListToGetFrom = new List<Vaseis>();
@@ -148,8 +148,9 @@ namespace ypologismosMorion
 
         private void sxoles_vaseis_listview_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var imported = e.Item as Vaseis;
-            Navigation.PushAsync(new SelectedVasiPage(imported));
+            throw new NotImplementedException();
+            //var imported = e.Item as Vaseis;
+            //Navigation.PushAsync(new SelectedVasiPage(imported));
         }
         public void sorting()
         {
