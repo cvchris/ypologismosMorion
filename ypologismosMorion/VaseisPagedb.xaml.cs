@@ -134,15 +134,15 @@ namespace ypologismosMorion
 
             if (atoz == true)
             {
-                data = data.OrderBy(o => o.vasi).ToList();
+                selectedVaseis = selectedVaseis.OrderBy(o => o.vasi).ToList();
 
             }
             else
             {
-                data = data.OrderByDescending(o => o.vasi).ToList();
+                selectedVaseis = selectedVaseis.OrderByDescending(o => o.vasi).ToList();
             }
             atoz = !atoz;
-            sxoles_vaseis_listview.ItemsSource = data;
+            sxoles_vaseis_listview.ItemsSource = selectedVaseis;
         }
     }
 }
