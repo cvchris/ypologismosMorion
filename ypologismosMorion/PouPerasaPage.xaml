@@ -10,11 +10,17 @@
             <Label Text="Οι σχολές που περνάς είναι:" HorizontalOptions="Center"/>
             <!-- The following label is only for testing..-->
             <!--<Label x:Name="Tamoriamou"/> -->
-            <ListView x:Name="sxolespoupernas" ItemSelected="sxolespoupernas_ItemSelected" ItemTapped="sxolespoupernas_ItemTapped" >
+            <ListView x:Name="sxolespoupernas" HasUnevenRows="True" ItemSelected="sxolespoupernas_ItemSelected" ItemTapped="sxolespoupernas_ItemTapped" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding sxoli}" Detail="{Binding vasi}" TextColor="Black"/>
-                    </DataTemplate>
+                            <ViewCell>
+                                <StackLayout Margin="3,0">
+                                    <Label Text="{Binding sxoli}"/>
+                                    <Label Text="{Binding poli}" FontSize="Micro"/>
+                                    <Label Text="{Binding vasi}"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
                 </ListView.ItemTemplate>
         </ListView>
             

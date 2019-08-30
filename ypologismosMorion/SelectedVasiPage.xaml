@@ -15,17 +15,33 @@
             </Grid.RowDefinitions>
             <ScrollView Grid.Row="0">
                 <StackLayout  Padding="3" >
+                    <StackLayout>
+                        <Label Text="Α/Α" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                        <Label x:Name="idsxolis" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Label Text="Κωδικός Μηχανογραφικού" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                        <Label x:Name="kodikosMixanografikou" HorizontalOptions="Center"/>
+                    </StackLayout>
                     <StackLayout Orientation="Vertical" HorizontalOptions="Center">
                         <Label Text="Σχολή:" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
                         <Label x:Name="sxoli_label" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                        <Label Text="Ίδρυμα:" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
+                        <Label x:Name="idryma_label" HorizontalOptions="Center"/>
                     </StackLayout>
                     <StackLayout>
                         <Label Text="Πόλη:" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
                         <Label x:Name="poli_label" HorizontalOptions="Center"/>
                     </StackLayout>
-                    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
-                        <Label Text="Βάση:" FontAttributes="Bold" HorizontalOptions="Center"/>
-                        <Label x:Name="vasi_label"/>
+                    <StackLayout x:Name="vasi2019_layout" IsVisible="False" Orientation="Vertical" HorizontalOptions="Center">
+                        <Label Text="Βάση 2019:" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label x:Name="vasi2019_label" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout x:Name="vasi2018_layout" IsVisible="False" Orientation="Vertical" HorizontalOptions="Center">
+                        <Label Text="Βάση 2018:" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label x:Name="vasi2018_label" HorizontalOptions="Center"/>
                     </StackLayout>
                     <StackLayout x:Name="triteknoi_layout"  IsVisible="False" HorizontalOptions="Center">
                         <Label TextColor="Red" FontAttributes="Bold" Text="Μόνο για τρίτεκνους!"/>
@@ -40,11 +56,11 @@
                         <Label TextColor="Red" FontAttributes="Bold" Text="ΓΕΛ ΣΤΡΑΤΙΩΤΙΚΕΣ ΕΙΔ.ΚΑΤ.3648/β!"/>
                     </StackLayout>
                     <StackLayout x:Name="EidikaMathimata_layout" IsVisible="False" HorizontalOptions="Center">
-                        <Label Text="Έχει ειδικό μάθημα:" TextColor="Red" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Προσοχή:" TextColor="Red" FontAttributes="Bold" HorizontalOptions="Center"/>
                         <Label x:Name="eidikoMathima_label" HorizontalOptions="Center"/>
                     </StackLayout>
                     <StackLayout x:Name="Stratiotikes_layout" IsVisible="False" HorizontalOptions="Center">
-                        <Label Text="ΠΡΟΣΟΧΗ:" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label Text="Σημείωση:" FontAttributes="Bold" HorizontalOptions="Center"/>
                         <Label Text="Για να είσαι υποψήφιος για Στρατιωτικές Σχολές, Αστυνομικές Σχολές, και Σχολές των Ακαδημιών Εμπορικού Ναυτικού πρέπει να έχεις κριθεί ικανός στις οικείες προκαταρκτικές εξετάσεις (υγειονομικές, αθλητικές, ψυχοτεχνικές) που διενεργούνται από τα αρμόδια Υπουργεία κατά περίπτωση."/>
                     </StackLayout>
                     <StackLayout x:Name="gelekklisiastikon_layout" IsVisible="False">
