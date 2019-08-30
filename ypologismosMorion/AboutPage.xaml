@@ -14,7 +14,7 @@
             <StackLayout Orientation="Horizontal" Grid.Row="0" Margin="10,20">
                 <Image Source="icon.png" VerticalOptions="Center" HeightRequest="100" />
 
-                <Label Text="Πανελλήνιες 2019 - Υπολογισμός Μορίων" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" />
+                <Label Text="Πανελλήνιες 2020 - Υπολογισμός Μορίων" FontSize="Large" HorizontalOptions="Center" HorizontalTextAlignment="Center" VerticalOptions="Center" />
 
 
             </StackLayout>

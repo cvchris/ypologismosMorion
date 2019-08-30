@@ -35,9 +35,13 @@
                         <Label Text="Πόλη:" FontAttributes="Bold" HorizontalOptions="CenterAndExpand"/>
                         <Label x:Name="poli_label" HorizontalOptions="Center"/>
                     </StackLayout>
-                    <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                    <StackLayout x:Name="vasi2019_layout" IsVisible="False" Orientation="Vertical" HorizontalOptions="Center">
                         <Label Text="Βάση 2019:" FontAttributes="Bold" HorizontalOptions="Center"/>
                         <Label x:Name="vasi2019_label" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <StackLayout x:Name="vasi2018_layout" IsVisible="False" Orientation="Vertical" HorizontalOptions="Center">
+                        <Label Text="Βάση 2018:" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label x:Name="vasi2018_label" HorizontalOptions="Center"/>
                     </StackLayout>
                     <StackLayout x:Name="triteknoi_layout"  IsVisible="False" HorizontalOptions="Center">
                         <Label TextColor="Red" FontAttributes="Bold" Text="Μόνο για τρίτεκνους!"/>

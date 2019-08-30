@@ -11,13 +11,16 @@ namespace ypologismosMorion
     {
 
         bool atoz = true;
-       // List<Vaseis> lista2 = VaseisData;
-        List<VaseisDBnew> data = new DatabaseManager().GetAllVaseis2019();
-        List<VaseisDBnew> selectedVaseis { get; set; }
+        List<VaseisDBnewWithPedio> data = new List<VaseisDBnewWithPedio>();
+        List<VaseisDBnewWithPedio> selectedVaseis { get; set; }
+        DatabaseManager _dbconnection;
 
         public VaseisPagedb()
         {
             InitializeComponent();
+            var dbconnection = new DatabaseManager();
+            _dbconnection = dbconnection;
+            selectEtos.SelectedIndex = 0;
             selectedVaseis = data;
             sxoles_vaseis_listview.ItemsSource = selectedVaseis;
 
@@ -63,16 +66,11 @@ namespace ypologismosMorion
             Filtering();
         }
 
-        private void ApplyFilters_Clicked(object sender, EventArgs e)
-        {
-            //sxoles_vaseis_listview.ItemsSource = SortedList;
-        }
-
         public void Filtering()
         {
             if(selectPedio.SelectedIndex > 0)
             {
-                selectedVaseis = new DatabaseManager().GetVaseis(selectPedio.SelectedIndex);
+                selectedVaseis = _dbconnection.GetVaseis(selectPedio.SelectedIndex, Convert.ToInt32(selectEtos.SelectedItem.ToString()));
                 sxoles_vaseis_listview.ItemsSource = selectedVaseis;
             }
             else
@@ -92,30 +90,6 @@ namespace ypologismosMorion
 
 
             sxoles_vaseis_listview.ItemsSource = selectedVaseis;
-
-            //if (EidikesKatigories.SelectedIndex > 0)
-            //{
-            //    newlist = lista2.Where(x => x.poli == (selectPoli.SelectedIndex > 0 ? selectPoli.SelectedItem.ToString() : x.poli))
-            //        .Where(x => (x.pedio == (selectPedio.SelectedIndex > 0 ? selectPedio.SelectedIndex : x.pedio) || x.deuteropedio == (selectPedio.SelectedIndex > 0 ? selectPedio.SelectedIndex : x.deuteropedio) || x.tefaa == true || x.tritopedio == (selectPedio.SelectedIndex > 0 ? selectPedio.SelectedIndex : x.tritopedio)) || x.ApoOlaTaPedia == true || x.tefaa == true)
-            //        .Where(x => x.stratiotikesAkatigoria == (EidikesKatigories.SelectedItem == "Στρατιωτικές Ειδ. Κατ. 3648/α"))
-            //        .Where(x => x.stratiotikesBkatigoria == (EidikesKatigories.SelectedItem == "Στρατιωτικές Ειδ. Κατ. 3648/β"))
-            //        .Where(x => x.triteknoi == (EidikesKatigories.SelectedItem == "Τρίτεκνοι"))
-            //        .Where(x => x.politeknoi == (EidikesKatigories.SelectedItem == "Πολύτεκνοι"))
-            //        .Where(x => x.monoGiaAstinomikous == (EidikesKatigories.SelectedItem == "Μόνο για Αστυνομικούς"))
-            //        .Where(x => x.MonoGiaPirosvestes == (EidikesKatigories.SelectedItem == "Μόνο για Πυροσβέστες"))
-            //        .Where(x => x.GelEklisiastikon == (EidikesKatigories.SelectedItem == "ΓΕΛ Εκκλησιαστικών"))
-            //        .Where(x => x.sxoli.ToUpper().Contains((!string.IsNullOrEmpty(searchbare)) ? searchbare.ToUpper() : x.sxoli.ToUpper()));
-
-            //}
-            //else
-            //{
-            //    newlist = ListToGetFrom.Where(x => x.poli == (selectPoli.SelectedIndex > 0 ? selectPoli.SelectedItem.ToString() : x.poli))
-            //        .Where(x => (x.pedio == (selectPedio.SelectedIndex > 0 ? selectPedio.SelectedIndex : x.pedio) || x.deuteropedio == (selectPedio.SelectedIndex > 0 ? selectPedio.SelectedIndex : x.deuteropedio) || x.tefaa == true || x.tritopedio == (selectPedio.SelectedIndex > 0 ? selectPedio.SelectedIndex : x.tritopedio)) || x.ApoOlaTaPedia == true || x.tefaa == true)
-            //        .Where(x => x.sxoli.ToUpper().Contains((!string.IsNullOrEmpty(searchbare)) ? searchbare.ToUpper() : x.sxoli.ToUpper()));
-
-            //}
-
-            //sxoles_vaseis_listview.ItemsSource = newlist;
         }
 
 
@@ -126,8 +100,10 @@ namespace ypologismosMorion
 
         private void sxoles_vaseis_listview_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            var imported = e.Item as VaseisDBnew;
-            Navigation.PushAsync(new SelectedVasiPage(imported));
+            var imported = e.Item as VaseisDBnewWithPedio;
+            int yearSelected = selectEtos.SelectedItem.ToString() == "2019" ? 2019 : 2018;
+            //var db = _dbconnection.GetVasi(imported.Mixanografiko,,yearSelected);
+            Navigation.PushAsync(new SelectedVasiPage(imported, yearSelected));
         }
         public void sorting()
         {
@@ -143,6 +119,15 @@ namespace ypologismosMorion
             }
             atoz = !atoz;
             sxoles_vaseis_listview.ItemsSource = selectedVaseis;
+        }
+
+        private void SelectEtos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string etosString = selectEtos.SelectedItem.ToString();
+            var etos = Convert.ToInt32(etosString);
+            selectedVaseis = _dbconnection.GetAllVaseis(etos);
+            data = selectedVaseis;
+            Filtering();
         }
     }
 }

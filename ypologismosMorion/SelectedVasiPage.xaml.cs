@@ -13,16 +13,48 @@ namespace ypologismosMorion
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SelectedVasiPage : ContentPage
     {
-        public SelectedVasiPage(VaseisDBnew currentsxoli)
+        DatabaseManager _databaseManager;
+        public SelectedVasiPage(VaseisDBnewWithPedio currentsxoli, int yearSelected)
         {
             InitializeComponent();
+            _databaseManager = new DatabaseManager();
+
+            int yearNotSelected = yearSelected == 2019 ? 2018 : 2019;
+
+            //load vasi 2018/2019 if exists
+            var vasiInOtherYear = _databaseManager.GetVasi(currentsxoli.Mixanografiko, currentsxoli.Pedio, yearNotSelected);
+
+
+            if (yearSelected == 2019)
+            {
+                vasi2019_layout.IsVisible = true;
+                vasi2019_label.Text = currentsxoli.vasi.ToString();
+                if(vasiInOtherYear != null)
+                {
+                    vasi2018_layout.IsVisible = true;
+                    vasi2018_label.Text = vasiInOtherYear.vasi.ToString();
+                }
+            }
+            else
+            {
+                vasi2018_layout.IsVisible = true;
+                vasi2018_label.Text = currentsxoli.vasi.ToString();
+                if (vasiInOtherYear != null)
+                {
+                    vasi2019_layout.IsVisible = true;
+                    vasi2019_label.Text = vasiInOtherYear.vasi.ToString();
+                }
+            }
+
+
             this.Title = currentsxoli.sxoli;
             sxoli_label.Text = currentsxoli.sxoli;
             poli_label.Text = currentsxoli.poli;
-            vasi2019_label.Text = currentsxoli.vasi.ToString();
             idsxolis.Text = currentsxoli.ID.ToString();
             idryma_label.Text = currentsxoli.idryma;
             kodikosMixanografikou.Text = currentsxoli.Mixanografiko.ToString();
+
+
 
             if (currentsxoli.eidika != null)
             {
@@ -34,7 +66,7 @@ namespace ypologismosMorion
                 Stratiotikes_layout.IsVisible = true;
             }
 
-            var pediaPouAnikei = new DatabaseManager().SePoiaPediaAnikei(currentsxoli.Mixanografiko);
+            var pediaPouAnikei = new DatabaseManager().SePoiaPediaAnikei(currentsxoli.Mixanografiko, yearSelected);
             if(pediaPouAnikei.Contains(1))
             {
                 protopedio_label.IsVisible = true;

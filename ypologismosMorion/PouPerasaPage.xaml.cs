@@ -9,10 +9,11 @@ namespace ypologismosMorion
 {
     public partial class PouPerasaPage : ContentPage
     {
+        int _kateuthinsi;
         public PouPerasaPage(double moria, int kateuthinsi, bool exeieidiko, double moriaeidikou)
         {
              InitializeComponent();
-
+            _kateuthinsi = kateuthinsi;
             //For Testing
             //Tamoriamou.Text = moria.ToString() + "..." + kateuthinsi.ToString();
 
@@ -26,7 +27,7 @@ namespace ypologismosMorion
             }
             else
             {
-                sxolespoupernas.ItemsSource = vaseis.Where(x => x.vasi < moria || ( x.eidika != null && x.vasi < (moria + moriaeidikou) && (x.eidika.Contains("Εξέταση σε αγωνίσματα") || x.eidika.Contains("Ειδικά Μαθήματα"))));   
+                sxolespoupernas.ItemsSource = vaseis.Where(x => x.vasi < moria || ( x.eidika != null && x.vasi < (moria + moriaeidikou) && !x.eidika.Contains("Ισχύουν επιπλέον προϋποθέσεις")));   
             }
 
 
@@ -50,9 +51,10 @@ namespace ypologismosMorion
         private void sxolespoupernas_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             //throw new NotImplementedException();
-            var imported = e.Item as VaseisDBnew;
+            var imported = e.Item as VaseisDBnewWithPedio;
+            imported.Pedio = _kateuthinsi + 1;
             //DisplayAlert(imported.sxoli, imported.vasi + currhaseidikomathima, "OK");
-            Navigation.PushAsync(new SelectedVasiPage(imported));
+            Navigation.PushAsync(new SelectedVasiPage(imported, 2019));
         }
     }
 }
