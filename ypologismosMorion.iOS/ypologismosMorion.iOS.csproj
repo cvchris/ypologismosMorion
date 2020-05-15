@@ -97,7 +97,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AdBanner_iOS.cs" />
-    <Compile Include="AdInterstitial_iOS.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="ypolEntryRenderer.cs" />

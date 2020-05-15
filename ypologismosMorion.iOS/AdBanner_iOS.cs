@@ -46,7 +46,7 @@ namespace ypologismosMorion.iOS
                 }
 
                 // TODO: change this id to your admob id
-                bannerView.AdUnitID = "ca-app-pub-2860697859082710/6688298447";
+                bannerView.AdUnitID = ypologismosMorion.Secrets.IOS_KEY;
 
                 foreach (UIWindow uiWindow in UIApplication.SharedApplication.Windows)
                 {
